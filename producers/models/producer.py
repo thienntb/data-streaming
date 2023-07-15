@@ -32,18 +32,9 @@ class Producer:
         self.num_partitions = num_partitions
         self.num_replicas = num_replicas
 
-        #
-        #
-        # TODO: Configure the broker properties below. Make sure to reference the project README
-        # and use the Host URL for Kafka and Schema Registry!
-        #
-        #
         self.broker_properties = {
             "bootstrap.servers": "PLAINTEXT://localhost:9092",
             "schema.registry.url": "http://localhost:8081"
-            # TODO
-            # TODO
-            # TODO
         }
 
         # If the topic does not already exist, try to create it
